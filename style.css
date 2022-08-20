@@ -1,0 +1,110 @@
+:root{
+  --Dark-cyan: hsl(185, 75%, 39%); 
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--Dark-cyan);
+  background-size: 100%;
+  padding: 1.5rem;
+  min-height: calc(100vh - 0.1px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card{
+  border-radius: 1rem 1rem 0 0;
+  margin: 4rem 4rem 1rem 3rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: 2px solid red;
+}
+
+.card .img-top{
+}
+
+.img-top img{
+  width: 500px;
+  position: absolute;
+  z-index: -1;
+  top: -250px;
+  left: -250px;
+}
+
+.card .avatar {
+  background-image: url("./images/bg-pattern-card.svg");
+  width: 300px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card .avatar img{
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.img-bottom img{
+  width: 500px;
+  position: absolute;
+  z-index: -1;
+  bottom: -220px;
+  right: -220px;
+}
+
+.card .personal-info{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.card .personal-info h1{
+  font-size: 20px;
+}
+
+.card .stats{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .stats h2{
+  font-size: 18px;
+}
+
+.card .stats .followers{
+
+}
+
+.card .stats .likes{
+
+}
+
+.card .stats .photos{
+
+}
+
+
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
